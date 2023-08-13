@@ -11,7 +11,7 @@ const Team = ({teamContent}: Props) => {
 
 
   return (
-    <div id="team" className="flex space-y-2  flex-col md:flex-row md:space-x-2 md:space-y-0 w-full shadow-lg md:max-w-[85%]  md:my-2">
+    <div key={teamContent._id} id="team" className="flex space-y-2  flex-col md:flex-row md:space-x-2 md:space-y-0 w-full shadow-lg md:max-w-[85%]  md:my-2">
         
         <div className="h-[50%] md:w-[50%] bg-white justify-center items-center flex flex-col  py-2">
       

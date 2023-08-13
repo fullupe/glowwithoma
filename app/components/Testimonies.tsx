@@ -11,7 +11,7 @@ type Props = {
 
 const Testimonies = ({testimony}: Props) => {
   return (
-    <div id="testimonies" className="w-96 h-[285px] flex flex-col items-center px-2 pb-2 my-2 md:my-0 bg-white rounded-lg shadow-lg ">
+    <div key={testimony._id} id="testimonies" className="w-96 h-[285px] flex flex-col items-center px-2 pb-2 my-2 md:my-0 bg-white rounded-lg shadow-lg ">
         <div className=" rounded-full flex flex-col  items-center justify-center ">
 
       <div className="flex w-20 h-20 relative drop-shadow-xl object-center">

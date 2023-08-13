@@ -9,7 +9,7 @@ interface Props {
 
 const Acadamy = ({acadamyContent}: Props) => {
     return (
-        <div id="acadamy" className="flex space-y-2  flex-col md:flex-row-reverse md:space-x-2 md:space-y-0 w-full shadow-lg md:max-w-[85%]  md:my-2">
+        <div key={acadamyContent._id} id="acadamy" className="flex space-y-2  flex-col md:flex-row-reverse md:space-x-2 md:space-y-0 w-full shadow-lg md:max-w-[85%]  md:my-2">
        
        
         <div className="h-[50%] md:w-[50%] bg-white justify-center items-center flex  flex-col md:mx-2 py-2">

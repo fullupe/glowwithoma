@@ -105,8 +105,8 @@ export default function Home() {
 
       <div className="grid grid-cols-1 md:grid-cols-3  bg-[url('/bgcontact.jpg')] bg-cover bg-center bg-fixed">
     {
-       servicedata.map((service:any)=>( 
-        <ServiceCard key={service._id} service={service}/>
+       servicedata.map((service)=>( 
+        <ServiceCard service={service}/>
        )
        )
     }
