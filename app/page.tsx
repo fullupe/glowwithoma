@@ -12,7 +12,7 @@ import Acadamy from './components/Acadamy'
 import { FaWhatsapp } from 'react-icons/fa';
 import Marquee from './components/Marquee'
 import { useEffect, useState } from 'react'
-import {groq} from "next-sanity"
+import {Any, groq} from "next-sanity"
 
 
 import {client} from "@/sanity/lib/client"
@@ -105,8 +105,8 @@ export default function Home() {
 
       <div className="grid grid-cols-1 md:grid-cols-3  bg-[url('/bgcontact.jpg')] bg-cover bg-center bg-fixed">
     {
-       servicedata.map((service)=>( 
-        <ServiceCard  service={service}/>
+       servicedata.map((service:any)=>( 
+        <ServiceCard key={service._id} service={service}/>
        )
        )
     }

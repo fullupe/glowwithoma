@@ -8,6 +8,7 @@ import Sociallinks from './Sociallinks'
 import {client} from "@/sanity/lib/client"
 
 import {BsTelephoneInbound } from 'react-icons/bs';
+import Image from 'next/image'
 
 type Props = {}
 
@@ -33,7 +34,7 @@ type Props = {}
   },[])
 
 
-    const bgimg=['/makeup.jpg','/bgimage.jpg','makeup2.jpg']
+    const bgimg=['/makeup.jpg','/bgimage.jpg','/makeup2.jpg']
     const bgimage = bgimg[Math.floor(Math.random()*bgimg.length)]
   return (
     <div id="about" className="flex w-full mb-2  items-center h-[600pxk] bg-[url('/makeup.jpg')] bg-cover bg-center  flex-col bgj-gradient-to-br from-[#18122B] via-[bg-gradient-to-r from-[#5C469C]  to-pink-500] to-[#5C469C]">
@@ -60,7 +61,7 @@ type Props = {}
       
       }
 
-       {/* <Link href="Tel:+2348121884692"> */}
+     
          <div className="flex p-1 justify-center items-center shadow-lg space-x-1 w-32 rounded-full text-center text-white bg-red-400  cursor-pointer hover:scale-90 transition duration-700">
           
           <p className="flex rounded-full text-black text-center items-center justify-center bg-white w-6 h-6">
@@ -72,12 +73,12 @@ type Props = {}
           <p className="flex-1 bg-white rounded-xl text-black italic   text-sm">Call us Now</p>
 
          </div>
-      {/* </Link> */}
+  
 
 
    </div>
-   <div className="flex w-full h-full pl-2 rounded-full border-4d  bg-cover items-center  mt-4 justify-center ">
-      <img className=" hidden md:flex rounded-full object-cover  md:w-[200px] md:h-[200px]" src={bgimage} alt="img"/>
+   <div className="flex w-full h-full pl-2 rounded-full border-4d  bg-cover items-center relative  mt-4 justify-center ">
+      <Image width={32} height={32} unoptimized className=" hidden md:flex rounded-full object-cover  md:w-[200px] md:h-[200px]" src={bgimage} alt="img"/>
     </div> 
    </div>
 
