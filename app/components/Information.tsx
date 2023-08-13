@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsClockHistory } from 'react-icons/bs';
-import { GoLocation } from 'react-icons/Go';
-import { AiTwotoneCalendar } from 'react-icons/Ai';
+import { GoLocation } from 'react-icons/go';
+import { AiTwotoneCalendar } from 'react-icons/ai';
 
 interface Props {
     

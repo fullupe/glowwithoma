@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BiDownArrow } from 'react-icons/Bi';
+import { BiDownArrow } from 'react-icons/bi';
 
 interface Props {
     

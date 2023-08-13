@@ -6,7 +6,7 @@ import Information from './Information'
 import Sociallinks from './Sociallinks'
 
 import {client} from "@/sanity/lib/client"
-import Link from 'next/link'
+
 import {BsTelephoneInbound } from 'react-icons/bs';
 
 type Props = {}

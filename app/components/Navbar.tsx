@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { SlBasket } from 'react-icons/sl';
 import { FaUser } from 'react-icons/fa';
-import { AiOutlineMenu, AiFillInfoCircle, AiOutlinePhone } from 'react-icons/Ai';
+import { AiOutlineMenu, AiFillInfoCircle, AiOutlinePhone } from 'react-icons/ai';
 import { GiHairStrands, } from 'react-icons/gi';
 import { MdOutlineHealthAndSafety, } from 'react-icons/md';
 import { BsMegaphoneFill } from 'react-icons/bs';
