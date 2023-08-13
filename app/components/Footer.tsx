@@ -36,7 +36,7 @@ const Footer = (props: Props) => {
 
                 <p className="text-red-500 flex md:h-12 md:w-12 hover:opacity-70 transition duration-700 cursor-pointer">
                 <Link target="_blank" href="https://www.instagram.com/">
-                <BsInstagram className=" text-xl md:text-4xl hover:text-white  "/>
+                <BsInstagram className=" text-xl md:text-4xl hover:text-white"/>
                 </Link>
                 </p>
 
