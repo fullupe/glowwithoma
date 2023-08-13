@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BiDownArrow } from 'react-icons/bi';
+import {BsFillArrowDownCircleFill } from 'react-icons/bs';
 
 interface Props {
     
@@ -74,11 +74,11 @@ const HealthAndTip = (props: Props) => {
           </p>
 
         </div>
-        <div onClick={handleshowMore} className=" p-2 bg-gray-800 text-xs h-12 w-12 -mb-6  rounded-full flex flex-col items-center justify-center ml-2 mt-1 ">
+        <div onClick={handleshowMore} className=" p-0 bg-gray-800 text-xs h-12 w-12 -mb-6  rounded-full flex flex-col items-center justify-center ml-2 mt-1 cursor-pointer ">
           {
             showmore ? <p>Less</p> : <p>More</p>
          }
-          <BiDownArrow className={`${showmore ? "rotate-180" : "rotate-0"}`}/>
+          <BsFillArrowDownCircleFill className={` w-5 h-5 ${showmore ? "rotate-180" : "rotate-0"}`}/>
         </div>
 
       </div>
