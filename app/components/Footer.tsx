@@ -56,8 +56,8 @@ const Footer = (props: Props) => {
 
             <div className="flex flex-col items-center justify-center text-white">
                 <p>Visite Our Online Shop</p>
-                <p>Booking's Available</p>
-                <p>Weddings, Parties, Birthday's.</p>
+                <p>Booking Available</p>
+                <p>Weddings, Parties, Birthday.</p>
             </div>
         </div>
 
