@@ -17,6 +17,7 @@ import {Any, groq} from "next-sanity"
 
 import {client} from "@/sanity/lib/client"
 import Link from 'next/link'
+import acadamy from '@/sanity/schemas/acadamy'
 
 const query = groq`
 *[_type == 'services']{
@@ -105,8 +106,8 @@ export default function Home() {
 
       <div className="grid grid-cols-1 md:grid-cols-3  bg-[url('/bgcontact.jpg')] bg-cover bg-center bg-fixed">
     {
-       servicedata.map((service)=>( 
-        <ServiceCard service={service}/>
+       servicedata.map((service:any)=>( 
+        <ServiceCard key={service._id} service={service}/>
        )
        )
     }
@@ -145,9 +146,9 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 space-y-4 sm:space-y-0 md:space-y-0  mb-2">
           {
-            testimonies.map((testimony)=>(
+            testimonies.map((testimony:any)=>(
 
-              <Testimonies testimony={testimony}/>
+              <Testimonies key={testimony._id} testimony={testimony}/>
             ))
           }
         
@@ -162,9 +163,9 @@ export default function Home() {
         {/* our goes */}
         <div className="flex flex-col  w-full items-center justify-center pt-8 bg-[url('/GlowWithOMA.png')] bg-cover bg-center bg-fixed">
         {
-          teamContent.map((team)=>(
+          teamContent.map((team:any)=>(
 
-            <Team teamContent={team}/>
+            <Team key={team._id} teamContent={team}/>
           ))
         }
         </div>
@@ -172,8 +173,8 @@ export default function Home() {
         {/* our accademy */}
         <div className="flex flex-col  w-full items-center justify-center pt-8 bg-[url('/GlowWithOMA.png')] bg-cover bg-center bg-fixed">
         {
-          acadamyContent.map((acadany)=>(
-            <Acadamy acadamyContent={acadany}/>
+          acadamyContent.map((acadamy:any)=>(
+            <Acadamy key={acadamy._id} acadamyContent={acadamy}/>
 
           ))
         }
