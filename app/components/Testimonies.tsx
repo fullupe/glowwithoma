@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-import { AiOutlineStar } from 'react-icons/Ai';
+import { AiOutlineStar } from 'react-icons/ai';
 import PortableText from 'react-portable-text';
 
 import {urlForImage} from "../../sanity/lib/image";
