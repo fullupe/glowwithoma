@@ -9,6 +9,7 @@ import {client} from "@/sanity/lib/client"
 
 import {BsTelephoneInbound } from 'react-icons/bs';
 import Image from 'next/image'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -52,7 +53,7 @@ type Props = {}
       
 
         <p className="flex bg-gray-900 opacity-80 p-1 px-4 rounded-br-full">{
-          herodata?.map((v:any)=>(
+          herodata?.map((v:HeroContent)=>(
              <p key={v._id}> {v.content}</p>
            ))
         }
@@ -62,9 +63,9 @@ type Props = {}
       }
 
      
-         <div className="flex p-1 justify-center items-center shadow-lg space-x-1 w-32 rounded-full text-center text-white bg-red-400  cursor-pointer hover:scale-90 transition duration-700">
+         <a href="tel:+2348121884692"  className="flex p-1 justify-center items-center shadow-lg space-x-1 w-32 rounded-full text-center text-white bg-red-400  cursor-pointer hover:scale-90 transition duration-700">
           
-          <p className="flex rounded-full text-black text-center items-center justify-center bg-white w-6 h-6">
+          <p  className="flex rounded-full text-black text-center items-center justify-center bg-white w-6 h-6">
 
           <BsTelephoneInbound/> 
           
@@ -72,7 +73,7 @@ type Props = {}
           </p>
           <p className="flex-1 bg-white rounded-xl text-black italic   text-sm">Call us Now</p>
 
-         </div>
+         </a>
   
 
 

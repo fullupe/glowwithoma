@@ -20,6 +20,10 @@ interface HealthContent extends Base{
     mainImage?:Image;
 
 }
+interface HeroContent extends Base{
+    content:string;
+
+}
 interface TestimoniesContent extends Base{
     body:Block[];
     clientname:string;

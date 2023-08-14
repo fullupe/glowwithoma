@@ -138,6 +138,7 @@ export default function Home() {
                 controls={false}
                 muted
                 autoPlay
+                playsInline
                 /> 
                 </div>
                 
