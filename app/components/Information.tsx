@@ -16,7 +16,7 @@ const Information = (props: Props) => {
           <div className="flex h-full items-center space-x-2.5 opacity-100 text-xs  md:text-lg">
            <BsClockHistory className="h-6 w-6 text-red-500"/>
            <div className="flex flex-col text-white">
-            <p className="uppercase ">OPening time</p>
+            <p className="uppercase text-[10px] sm:text-[17px]">OPening time</p>
             <p className="text-gray-400"> Mon-Fri 7am - 6pm</p>
            </div>
 
@@ -25,7 +25,7 @@ const Information = (props: Props) => {
           <div className="flex  h-full items-center space-x-2.5 opacity-100 text-xs md:text-lg">
             <GoLocation className="h-6 w-6 text-red-500"/>
           <div className="flex flex-col text-white">
-            <p className="uppercase ">LOcation</p>
+            <p className="uppercase text-[10px] sm:text-[17px] ">LOcation</p>
             <p className="text-gray-400"> 250 Udoma st opp, Johson street</p>
            </div>
             </div>
@@ -33,7 +33,7 @@ const Information = (props: Props) => {
           <div className="flex h-full items-center space-x-2.5 opacity-100 text-xs md:text-lg">
             <AiTwotoneCalendar className="h-6 w-6 text-red-500"/>
           <div className="flex flex-col text-white">
-            <p className="uppercase ">Booking</p>
+            <p className="uppercase text-[10px] sm:text-[17px] ">Booking</p>
             <p className="text-gray-400"> Mon-Fri 7am - 6pm</p>
            </div>
          </div>

@@ -99,14 +99,14 @@ export default function Home() {
       <Navbar/>
       <Herosection/>
 
-    <div className="flex flex-col  w-full items-center justify-center pt-4 bg-gray-900">
+    <div className="flex flex-col  w-full items-center justify-center pt-4 mb-2 bg-gray-900">
 
         <p className="flex text-center text-lg font-bold border-b uppercase text-white font-poppins ">Services</p>
     
 
       <div className="grid grid-cols-1 md:grid-cols-3  bg-[url('/bgcontact.jpg')] bg-cover bg-center bg-fixed">
     {
-       servicedata.map((service:any)=>( 
+       servicedata.map((service:ServiveContent)=>( 
         <ServiceCard key={service._id} service={service}/>
        )
        )
@@ -119,7 +119,7 @@ export default function Home() {
 
 
           {/* Health tips */}
-        <div className="flex flex-col  w-full items-center justify-center pb-4  pt-8">
+        <div className="flex flex-col  w-full items-center justify-center pb-4 bg-gray-300  pt-8">
 
            <HealthAndTip/>
 
@@ -146,7 +146,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 space-y-4 sm:space-y-0 md:space-y-0  mb-2">
           {
-            testimonies.map((testimony:any)=>(
+            testimonies.map((testimony:TestimoniesContent)=>(
 
               <Testimonies key={testimony._id} testimony={testimony}/>
             ))
@@ -163,7 +163,7 @@ export default function Home() {
         {/* our goes */}
         <div className="flex flex-col  w-full items-center justify-center pt-8 bg-[url('/GlowWithOMA.png')] bg-cover bg-center bg-fixed">
         {
-          teamContent.map((team:any)=>(
+          teamContent.map((team:TeamContent)=>(
 
             <Team key={team._id} teamContent={team}/>
           ))
@@ -173,7 +173,7 @@ export default function Home() {
         {/* our accademy */}
         <div className="flex flex-col  w-full items-center justify-center pt-8 bg-[url('/GlowWithOMA.png')] bg-cover bg-center bg-fixed">
         {
-          acadamyContent.map((acadamy:any)=>(
+          acadamyContent.map((acadamy:TeamContent)=>(
             <Acadamy key={acadamy._id} acadamyContent={acadamy}/>
 
           ))

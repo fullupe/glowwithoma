@@ -43,22 +43,22 @@ const HealthAndTip = (props: Props) => {
     },[])
 
     return (
-        <div id="health" className=" flex w-[90%] md:w-[80% bg-gray-300">
+        <div id="health" className=" flex w-[95%] md:w-[80%] bg-black">
       
-      <div className=" flex justify-center w-24 bg-red-900  ">
+      <div className=" flex justify-center w-20 bg-red-900  ">
        <p className=" flex justify-center bg-blacks rotate-90 items-center text-center whitespace-nowrap text-white font-bold text-lg tracking-[4px] uppercase ">makeup and  beauty </p>
 
       </div>
 
       <div className=" flex flex-col text-white w-full pb-2 ">
         <div className=" text-white bg-gray-900 flex   pl-2 mx-2">
-        <p className="text-white">Makeup Health Tips</p>
+        <p className="text-white border-b  italic "> 👉 Makeup Health Tips</p>
         </div>
 
         <div className="px-2 space-y-2 flex flex-col pl-2">
           {
             healthTips.map((tip:HealthContent)=>(
-              <p key={tip._id} className=" flex p-2 bg-gray-400 shadow-lg ">
+              <p key={tip._id} className=" flex p-2 bg-gray-900 shadow-lg text-gray-200 ">
 
                 <PortableText content={tip.body}/>
              

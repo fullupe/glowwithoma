@@ -11,8 +11,8 @@ const ServiceCard = ({service}:Props) => {
 
     
     return (
-        <div key={service._id} id="service" className="w-96 h-64 flex flex-col items-center p-2 m-2 bg-white rounded-lg shadow-lg ">
-            <h1 className="font-bold text-lg tracking-[4px] uppercase border-b">{service.title}</h1>
+        <div key={service._id} id="service" className="w-96 h-64 flex flex-col items-center p-2 m-2 bg-gray-300 rounded-lg shadow-lg ">
+            <h1 className="font-bold text-lg tracking-[4px] uppercase border-b border-white">{service.title}</h1>
 
             <div className=" px-2">
 
