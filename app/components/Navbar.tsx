@@ -7,6 +7,7 @@ import { MdOutlineHealthAndSafety, } from 'react-icons/md';
 import { BsMegaphoneFill } from 'react-icons/bs';
 import { motion } from 'framer-motion'
 import Modal from './modal';
+import Link from 'next/link';
 
 type Props = {}
 
@@ -24,8 +25,13 @@ function Navbar({}: Props) {
             g-w oma
         </div>
         <div className="flex space-x-8">
-        <SlBasket onClick={()=>setIsVisible(!isVisible)} className="text-gray-200 h-6 w-6"/>
-        <FaUser onClick={()=>setIsVisible(!isVisible)} className="text-gray-200  h-6  w-6"/>
+          <Link href="/shop">
+        <SlBasket  className="text-gray-200 h-6 w-6"/>
+        </Link>
+        <Link href="/users">
+        <FaUser className="text-gray-200  h-6  w-6"/>
+        </Link>
+
         <AiOutlineMenu onClick={()=>setShowMenu(!showMenu)} className="text-gray-200 flex md:hidden cursor-pointer h-6 w-6"/>
         </div>
         </div>
